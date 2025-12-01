@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #666;
+}
+
+:root {
+    --white: #fff;
+    --searchbar: #ebfffcf1;
+    --searchtext: #555;
+    --bgcolor1: #339fc4;
+    --bgcolor2: #f1a23b;
+}
+
+.darkmode {
+    --white: lightblue;
+    --searchbar: #4444446e;
+    --searchtext: #cccccccb;
+    --bgcolor1: #030336dc;
+    --bgcolor2: #043b32ef;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, var(--bgcolor1), var(--bgcolor2));
+    color: var(--white);
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: var(--searchbar);
+    color: var(--searchtext);
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.1rem;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: var(--searchbar);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 18px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: -10px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.weather h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: -50px;
+}
+
+.humidity,
+.wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mode {
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: -15px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mode button {
+    border: 0;
+    outline: 0;
+    background-color: var(--searchbar);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#mode-switch {
+    margin-right: -150px;
+}
+
+.mode button img {
+    width: 35px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.mode button img:last-child {
+    display: none;
+}
+
+.darkmode .mode button img:first-child {
+    display: none;
+}
+
+.darkmode .mode button img:last-child {
+    display: block;
+}
+
+.mode .heading {
+    display: flex;
+    gap: 5px;
+}
+
+.heading button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.heading button img {
+    width: 45px;
+}
+
+.heading button img:last-child {
+    width: 30px;
+}
+
+.darkmode .heading button img:last-child {
+    display: none;
+}
+
+.darkmode .heading button img:first-child {
+    display: block;
+}
+
+.heading h2 {
+    font-size: 1.2rem;
+}
+
+#bookmark-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: -120px;
+    margin-left: -100px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.darkmode #bookmark-btn {
+    color: whitesmoke
+}
+
+#bookmark-btn:hover {
+    transform: scale(1.2);
+}
+
+.favourites-list {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.fav-item {
+    display: flex;
+    justify-content: space-between;
+    background: #cbce16;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.fav-city {
+    font-weight: 600;
+}
+
+.remove-fav {
+    border: none;
+    background: red;
+    color: rgb(158, 93, 93);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+.appicon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: -50px;
+}
+
+.appicon .mainicon:hover {
+    box-shadow: 0px 10px 10px rgba(56, 56, 56, 0.5);
+}
+
+.appicon button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.mainicon {
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card {
+    display: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="appicon">
+        <button>
+            <img src="/images/mainicon.jpg" class="mainicon">
+            <h2>Weather App</h2>
+        </button>
+    </div>
+    <div class="card">
+        <div class="mode">
+            <div class="heading">
+                <button id="icon1">
+                    <img src="/images/appicon1.png" id="current-location">
+                    <img src="/images/backarrow.png" id="backarrow">
+                </button>
+                <h2>Weather Updates</h2>
+            </div>
+            <button id="mode-switch">
+                <img src="/images/darkmode.png">
+                <img src="/images/lightmode.png">
+            </button>
+            <button id="bookmark-btn">♡</button>
+            <div class="favourites-list"></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search your city" spellcheck="false">
+            <button><img src="/images/magnifying-glass.png"></button>
+        </div>
+        <div class="error">
+            <p>Invalid City</p>
+        </div>
+        <div class="weather">
+            <h1 class="temp">27°C</h1>
+            <img src="/images/clouds.png" class="weather-icon">
+            <h3 class="condition"></h3>
+            <h2 class="city">India</h2>
+            <div class="info">
+                <div class="col">
+                    <img src="/images/humidity1.png">
+                </div>
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+                <div class="col">
+                    <img src="/images/wind1.png">
+                </div>
+                <div>
+                    <p class="wind">20km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
